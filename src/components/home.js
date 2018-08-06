@@ -5,7 +5,7 @@ class Home extends Component {
     render() {
         return (
             <div className="App">
-                HAHAH
+                iiiiii
             </div>
         );
     }
