@@ -4,7 +4,7 @@ class Cart extends Component {
     render() {
         return (
             <div>
-                <h1>购物车</h1>
+                <h1 style={{"color":"red"}}>购物车</h1>
             </div>
         );
     }

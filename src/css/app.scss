@@ -112,18 +112,80 @@
     position: relative;
     .l-Router-fenlei{
         width:160px;
-        height:55px;
+        height:45px;
         background: #fff;
         color:#000;
         position:absolute;
-        
+        left:63px;
+        top:14px;
+        text-align: center;
+        font-size: 14px;
+        padding-top: 10px;
+        font-weight:800;
     }
     .l-Router{
-        width:1232px;
+        width:1141px;
         height:55px;
-        background: palegreen;
         margin:0 auto;
         padding-top:15px;
-        padding-left: 160px;
+        padding-left: 223px;
+        padding-right:28px;
+        .l-Router-one{
+            display: block;
+            float:left;
+            width:76px;
+            height:37px;
+            line-height: 37px;
+            text-align: center;
+            color: #fff;
+            padding:0 24px;
+            font-style: normal;
+            font-variant-ligatures: normal;
+            font-variant-caps: normal;
+            font-variant-numeric: normal;
+            font-variant-east-asian: normal;
+            font-weight: bold;
+            font-stretch: normal;
+            font-size: 14px;
+            font-family: "Microsoft Yahei";
+            position:relative;
+        }
+        .l-Router-two{
+            width:auto;
+            height:14px;
+            display: block;
+            float: right;
+            line-height: 14px;
+            font-size: 12px;
+            text-decoration: none;
+            color: #444;
+            font-family: 'Arial';
+            z-index: 1;
+            font-size: 14px;
+            color:#fff;
+            span{
+                padding:0 10px;
+            }
+        }
     }    
+}
+.sanjiao{
+    font-style: normal;
+    display: block;
+    position: absolute;
+    width:0;
+    height: 0;
+    border-width:5px;
+    border-style:solid;
+    border-color: #fff transparent transparent transparent;
+    left:57px;
+}
+.fenlei{
+    width:160px;
+    position:absolute;
+    top:190px;
+    left:63px;
+    background: #272727;
+    color:#fff;
+    display: none;
 }

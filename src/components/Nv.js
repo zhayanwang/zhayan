@@ -4,7 +4,7 @@ class Nv extends Component {
     render() {
         return (
             <div>
-                <h1>女装</h1>
+                <h1 style={{"color":"red"}}>女装</h1>
             </div>
         );
     }

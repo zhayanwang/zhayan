@@ -4,7 +4,7 @@ class Nan extends Component {
     render() {
         return (
             <div>
-                <h1>人气</h1>
+                <h1 style={{"color":"red"}}>人气</h1>
             </div>
         );
     }

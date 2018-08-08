@@ -22,7 +22,8 @@ class App extends Component {
 		this.state={
 			arr:[],
 			arr1:[],
-			arr2:[]
+			arr2:[],
+			cart:0
 		}
 	}
 //请求搜索框美衣，设计师的数据
@@ -58,6 +59,19 @@ class App extends Component {
 			var i = $(this).index();
 			$('.l-input-p2').children("p").eq(i).css('display','block').siblings('p').css('display','none');
 		})
+//导航点击时下面显示三角
+		$('.l-Router-one').click(function(){
+			$(this).children('em').addClass("sanjiao");
+			$(this).siblings().children('em').removeClass('sanjiao');
+		})
+//分类导航栏的鼠标滑入划出事件
+		/*console.log($('.l-Router-fenlei'))
+		$('.l-Router-fenlei').click(function(){
+			
+		})
+		(".l-Router-fenlei").on('mouseout',function(){
+			$('.fenlei').hide();
+		})*/
 	}
   render() {
   	var _this = this;
@@ -96,21 +110,24 @@ class App extends Component {
 			        </div>
 				</div>
 	    </div>
+	    <div className="fenlei">
+	    	fenlei
+	    </div>
 	    <div className="l-Router-wrap">
 			<Router >
 				<div>
 					<div className="l-Router-fenlei">
 						分类
-					</div>
+				    </div>
 					<div className="l-Router">
-						<Link to="/home" className="l-Router-one">首页</Link>
-						<Link to="/nv" className="l-Router-one">女装</Link>
-						<Link to="/nan" className="l-Router-one">男装</Link>
-						<Link to="/dingzhi" className="l-Router-one">服装定制</Link>
-						<Link to="/renqi" className="l-Router-one">人气单品</Link>
-						<Link to="/register" className="l-Router-two">注册</Link>
-						<Link to="/login" className="l-Router-two">登录</Link>
-						<Link to="/cart" className="l-Router-two">购物车(0)</Link>
+						<Link to="/home" className="l-Router-one">首页<em className="sanjiao"></em></Link>
+						<Link to="/nv" className="l-Router-one">女装<em></em></Link>
+						<Link to="/nan" className="l-Router-one">男装<em></em></Link>
+						<Link to="/dingzhi" className="l-Router-one">服装定制<em></em></Link>
+						<Link to="/renqi" className="l-Router-one">人气单品<em></em></Link>
+						<Link to="/cart" className="l-Router-two">购物车({_this.state.cart})</Link>
+						<Link to="/login" className="l-Router-two">登录<span>|</span></Link>
+						<Link to="/register" className="l-Router-two">注册<span>|</span></Link>
 					</div>
 					<div>
 						<Switch>

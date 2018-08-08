@@ -4,7 +4,7 @@ class DingZhi extends Component {
     render() {
         return (
             <div>
-                <h1>定制</h1>
+                <h1 style={{"color":"red"}}>定制</h1>
             </div>
         );
     }

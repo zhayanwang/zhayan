@@ -4,7 +4,7 @@ class Register extends Component {
     render() {
         return (
             <div>
-                <h1>注册</h1>
+                <h1 style={{"color":"red"}}>注册</h1>
             </div>
         );
     }
