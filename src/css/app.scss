@@ -1,0 +1,129 @@
+*{margin: 0;padding: 0;}
+.l-header-wrap{
+	width:100%;
+	height:120px;
+	background: #000;
+	color:#fff;
+	font-size: "Arial";    
+}
+.l-header{
+	width:1392px;
+	height:120px;
+	background: #000;
+	margin:0 auto;
+	color:#fff;
+}
+.l-head{
+	width:260px;
+	height: 65px;
+	float:left;
+	margin-left: 80px;
+	padding-top: 15px;
+}
+.l-header img{
+	display: block;
+	width:100%;
+	height:100%;
+}
+.l-input{
+	width:370px;
+	height:89px;
+	float:left;
+	margin-left: 197px;
+	padding-top:20px;
+}
+.l-input p{
+	width:120px;
+	height:26px;
+	span{
+	    display:block;
+        float: left;
+        width:60px;
+        height: 26px;
+        line-height: 26px;
+        text-align: center;
+        font-size: 12px;
+	}
+}
+.l-input-span1{
+	color:#000000;
+	background: #fff;
+}
+.l-input-span2{
+	color:#fff;
+	background: #000000;
+}
+.l-input-input{
+	width:370px;
+	height:30px;
+	position: relative;
+	span{
+       display: block;
+        float:left;
+        width:80px;
+        height:30px;
+        line-height: 30px;
+        text-align: center;
+        font-size: 12px;
+        background: #fff;
+        color:#000;
+        position:absolute;
+        right:0;
+        bottom:0 
+    }
+}
+#sou{
+	display: block;
+	border:none;
+	width:275px;
+	height:26px;
+	border:2px solid #fff;
+	background: #000000;
+	color:#fff;
+	padding-left:11px;
+}
+.l-input-p2{
+    width:370px;
+    height:26px;
+    p{
+        width:370px;
+        height:26px;
+        span{
+            width:auto;
+            height:26px;
+            line-height: 26px;
+            text-align: left;
+            margin-right: 10px;
+        }
+    }
+    p:nth-of-type(2){
+        display: none;
+        span{
+            margin-right: 5px;
+        }
+    }
+}
+.l-Router-wrap{
+    width:100%;
+    height:70px;
+    background: #000;
+    color:#fff;
+    font-size: "Arial";
+    position: relative;
+    .l-Router-fenlei{
+        width:160px;
+        height:55px;
+        background: #fff;
+        color:#000;
+        position:absolute;
+        
+    }
+    .l-Router{
+        width:1232px;
+        height:55px;
+        background: palegreen;
+        margin:0 auto;
+        padding-top:15px;
+        padding-left: 160px;
+    }    
+}
